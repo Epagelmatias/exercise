@@ -5,11 +5,36 @@ In order to run application use:
 
 Access the frontend on http://localhost:3001/
 
-The backend endpoints are:  
+# Endpoints
 
-POST /feedDB  
-GET /users/messaged-with/:userId  
-POST /users/search  
-POST /between  
+## Search user
 
-See the controllers folder for the POST parameters
+- **URL**: `/users/search`
+- **Method**: POST
+
+### Request Parameters
+
+1. `username` (string): The username of the user you want to search for.
+2. `yearFrom` (integer): The starting year of the user's registration.
+3. `yearTo` (integer): The ending year of the user's registration.
+4. `gender` (string): The gender of the user (e.g., "Male", "Female", "N/A").
+
+## Get messages exchanged between two users
+
+- **URL**: `/messages/between`
+- **Method**: POST
+
+### Request Parameters
+
+1. `user1` (string): The username of the user you want to search for.
+2. `user2` (integer): The starting year of the user's registration.
+
+## Get all the latest messages a user has exchanged with other users
+
+- **URL**: `/users/messaged-with/:userId`
+- **Method**: GET
+
+## Insert initial data to the database
+
+- **URL**: `/feedDB`
+- **Method**: POST
