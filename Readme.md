@@ -5,11 +5,11 @@ In order to run application use:
 
 Access the frontend on http://localhost:3001/
 
-The backend endpoints are:
+The backend endpoints are:  
 
-POST /feedDB
-GET /users/messaged-with/:userId
-POST /users/search
-POST /between 
+POST /feedDB  
+GET /users/messaged-with/:userId  
+POST /users/search  
+POST /between  
 
 See the controllers folder for the POST parameters
