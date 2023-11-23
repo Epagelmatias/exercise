@@ -7,7 +7,7 @@ Access the frontend on http://localhost:3001/
 
 # Endpoints
 
-## Search user
+## - Search user
 
 - **URL**: `/users/search`
 - **Method**: POST
@@ -19,7 +19,7 @@ Access the frontend on http://localhost:3001/
 3. `yearTo` (integer): The ending year of the user's registration.
 4. `gender` (string): The gender of the user (e.g., "Male", "Female", "N/A").
 
-## Get messages exchanged between two users
+## - Get messages exchanged between two users
 
 - **URL**: `/messages/between`
 - **Method**: POST
@@ -29,12 +29,12 @@ Access the frontend on http://localhost:3001/
 1. `user1` (string): The username of the user you want to search for.
 2. `user2` (integer): The starting year of the user's registration.
 
-## Get all the latest messages a user has exchanged with other users
+## - Get all the latest messages a user has exchanged with other users
 
 - **URL**: `/users/messaged-with/:userId`
 - **Method**: GET
 
-## Insert initial data to the database
+## - Insert initial data to the database
 
 - **URL**: `/feedDB`
 - **Method**: POST
